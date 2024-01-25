@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Ecommerce-Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="/about.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <img src="./assets/Library.svg" class="logo" alt="" />
+
+        <ul class="nav__links">
+          <li><a href="/index.html" class="nav__link">Home</a></li>
+          <li><a href="/About.html" class="nav__link">About</a></li>
+          <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+        </ul>
+
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="about_me">About Me</h1>
+
+    <section class="main-content">
+      <div class="profile-picture">
+        <img src="./assets/archiel.jpg" alt="My Profile Picture" />
+      </div>
+
+      <article>
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong> Archiel D. Estoconing</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Location:</strong> Bayog, Africa</p>
+        <p><strong>Occupation:</strong> Web Developer</p>
+      </article>
+
+      <article>
+        <h2>About Me</h2>
+        <p>
+          I'm Archiel D. Estoconing, a 19-year-old first-year student pursuing
+          an Associate in Computer Technology. Aspiring to become a skilled
+          programmer, I am passionate about delving into the world of coding and
+          technology. Beyond the screen, I find solace in the pages of books,
+          making me a dedicated book lover with a zest for continuous learning
+          and growth.
+        </p>
+      </article>
+
+      <article>
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> archielestoconing30@gmail.com</p>
+        <p><strong>Phone:</strong> +639123456789</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Archiel D. Estoconing. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
